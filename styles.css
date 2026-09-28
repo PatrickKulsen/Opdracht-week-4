@@ -162,44 +162,134 @@ header {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    background-color: var(--lichtgrijs);
 }
 
-.work-container1 {
+.work-container-main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-basis: 1200px;
     margin: 0 20px 0 20px;
     padding: 20px 0 20px 0;
+}
+.work-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0 20px 0;
+
 }
 .work-container2 {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-basis: 1200px;
-    margin: 0 20px 0 20px;
-    padding: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 .work-container3 {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+.work-container1 span, .work-container2 span, .work-container3 span {
+        flex-basis: 700px;
+}
+
+.work-container1 article, .work-container2 article, .work-container3 article {
+    flex-basis: 500px;
+    padding: 20px;
+}
+.work-container1 img,
+.work-container2 img,
+.work-container3 img {
+    width: 650px;
+    height: auto;
+}
+/* --------------- 4.4 Services ------------------- */
+.services-section {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    }
+.services-container-main {
     flex-basis: 1200px;
-    margin: 0 20px 0 20px;
-    padding: 20px 0 20px 0;
-}
-.work-container1.span, .work-container2.span , .work-container3.span {
     display: flex;
-    flex-basis: 300px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.services-container1, .services-container2, .services-container3, .services-container4, .services-container5, .services-container6 {
+    flex-basis: 350px;
+    border: 2px solid var(--paars);
+    height: 300px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-/* --------------- 4.4 Services ------------------- */
+.services-section img {
+    width: 60px;
+    height: auto;
+}
 
-
+.services-section h2 {
+    color: var(--paars);
+    font-size: 24px;
+}
 /* --------------- 4.5 Form ------------------- */
+.form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paars);
+}
+
+.form-container {
+    flex-basis: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.form-container .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container .form input,
+.form-container .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
 /* ------------------------------- 4.6 Footer -------------------------------- */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--zwart);
+    color: white;
+}
+footer p {
+    flex-basis: 400px;
+}
