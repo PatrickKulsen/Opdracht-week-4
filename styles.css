@@ -252,6 +252,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--paars);
+    padding: 40px 0 20px 0;
 }
 
 .form-container {
@@ -269,6 +270,7 @@ header {
     align-items: flex-start;
     width: 100%;
     gap: 15px;
+    padding: 30px;
 }
 
 .form-container .form input,
@@ -287,10 +289,12 @@ footer {
 }
 footer p {
     flex-basis: 400px;
+    padding: 10px 0 10px 0;
 }
 
 .form-container button {
     width: 100px;
     height: 30px;
     background-color: var(--roze);
+    margin-bottom: 15px;
 }
