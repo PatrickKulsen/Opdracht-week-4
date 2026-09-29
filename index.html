@@ -119,13 +119,18 @@
         </div>
     </section>
     <section class="form-section">
-        <form class="form-container">
-            <h1>Let's work together</h1>
-            <p>Have a question? Need a quote? Let us know!</p>
+        <form class="form-container" onsubmit="hier-hebben-we-javascript-voor-nodig">
+            <div class="form-item">
+                <h1>Let's work together</h1>
+                <p>Have a question? Need a quote? Let us know!</p>
+            </div>
             <div class="form">
-                <input type="text" name="name" placeholder="Name" required/>
-                <input type="email" name="email" placeholder="Email" required/>
-                <textarea name="message" placeholder="Message" required></textarea>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required/>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required/>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
                 <button type="submit">Send</button>
             </div>
         </form>
